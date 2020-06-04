@@ -101,7 +101,7 @@ var Game = {
   UseBackground: 1,
   extTime: 20,
   extCurrTime: 0,
-  lang: "english",
+  lang: "chinese",
   Starship: [200, 200, 10],
 };
 

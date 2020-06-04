@@ -88,7 +88,7 @@ function load() {
 }
 
 function exportSave() {
-  var saveData = btoa(JSON.stringify(Game));
+  var saveData = btoa(encodeURIComponent(JSON.stringify(Game)));
   window.getSelection().removeAllRanges();
   showmessage("Save exported", "The save is now copied in your clipboard.");
   $("#exportBody").html("<textarea id='saveCode'>" + saveData + "</textarea>");
@@ -100,7 +100,7 @@ function exportSave() {
 }
 
 function importSave() {
-  var save = prompt("Paste the code previously obtained here");
+  var save = prompt("将先前获得的存档代码粘贴到此处");
   if (save) {
     restoreSave(save);
   }
@@ -108,7 +108,7 @@ function importSave() {
 
 function restoreSave(save) {
   try {
-    var decoded = atob(save);
+    var decoded = decodeURIComponent(atob(save));
     JSON.parse(decoded);
     if (decoded) {
       localStorage.setItem("SLStars3", decoded);

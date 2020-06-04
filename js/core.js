@@ -9,7 +9,7 @@
 
 //CONFIG
 var version = "5.1";
-var sitename = "SLStars";
+var sitename = "太空掠夺者 - SLStars";
 var Game = {
   isLoading: 1,
   startedVersion: getVersion(),

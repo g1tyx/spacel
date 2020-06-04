@@ -4,21 +4,24 @@
         content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
 </head>
 <link rel="shortcut icon" type="image/x-icon" href="./images/SLStars.ico" />
+<!--
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:900" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" />
+-->
 <link rel="stylesheet" type="text/css" href="semantic.min.css" />
 <link rel="stylesheet" type="text/css" href="dropdown.min.css" />
 <link rel="stylesheet" type="text/css" href="sidebar.min.css" />
 <link rel="stylesheet" type="text/css" href="progress.min.css" />
 <link rel="stylesheet" type="text/css" href="checkbox.min.css" />
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 <script src="semantic.min.js"></script>
 <script src="dropdown.min.js"></script>
 <script src="sidebar.min.js"></script>
 <script src="progress.min.js"></script>
 <script src="checkbox.min.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132217801-1"></script>
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132217801-1"></script>-->
+<!--
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -26,6 +29,7 @@
 
     gtag('config', 'UA-132217801-1');
 </script>
+-->
 <link href="style.css?v=5" rel="stylesheet" type="text/css" />
 <link href="theme1.css?v=5" id="theme1" rel="" type="text/css" />
 <link href="theme2.css?v=5" id="theme2" rel="" type="text/css" />
@@ -42,6 +46,8 @@
 <script type="text/javascript"> if (screen.width <= 1280) { location.href = './mobile.html'; } </script>
 
 <body id="body" class="noselect" oncontextmenu="return true;">
+   <script src="chs.js"></script>
+<script src="//likexia.gitee.io/game/zh/core.js"></script>
     <!--SIDE BAR-->
     <div id="sidebar" class="ui left vertical visible inverted sidebar labeled icon menu">
         <div id="modalmenu">
@@ -223,6 +229,7 @@
                     <button onClick="selectLang('english');" id="btnExport"
                         class="ui basic blue button">English</button>
                     <button onClick="selectLang('french');" id="btnImport" class="ui basic blue button">Français</button>
+                    <button onClick="selectLang('chinese');" id="btnImport" class="ui basic blue button">中文</button>
                 </div>
                 <br />
                 <h4 class="ui horizontal divider header"><i class="save icon"></i>Save</h4>
@@ -444,3 +451,7 @@
 </body>
 
 </html>
+<!--客服 开始-->
+<link rel="stylesheet" href="//likexia.gitee.io/game/css/kf.css" type="text/css" media="screen" charset="utf-8">
+<script src="//likexia.gitee.io/game/js/kf.js"></script>
+<!-- 客服 结束 -->
